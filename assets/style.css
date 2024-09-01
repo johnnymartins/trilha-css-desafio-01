@@ -35,11 +35,17 @@ header {
     height: 665px;
     gap: 0px;
     border-bottom: 1px solid #33A8DB;
-    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.6)0%, 
-                                               rgba(49, 168, 221, 0.20)50%,
-                                               rgba(49, 168, 221, 0)100%);
-    position: relative; /* Adiciona posição relativa para que a imagem de fundo fique dentro deste contexto */
+    position: relative;
     overflow: hidden;
+    top: 0px;
+    background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%,  
+                                               rgba(49, 168, 221, 0.20) 50%, 
+                                               rgba(0, 0, 0, 0.6) 100%), 
+                                               url(../assets/images/banner.png);
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #banner_fundo {
@@ -48,11 +54,6 @@ header {
     min-height: 100%; /* Garante que a imagem ocupe no mínimo 100% da altura da div */
     min-width: 1440px; /* Garante que a largura mínima da imagem seja de 1440px */
     position: absolute;
-    top: 0;
-    opacity: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .banner-content {
@@ -89,6 +90,7 @@ header {
     font-size: 23px;
     font-weight: 400;
     letter-spacing: -0.4px;
+    color: rgba(255, 255, 255, 1);
     margin: 0;
     text-align: center;
 }
@@ -172,6 +174,10 @@ main {
     margin: 0;
 }
 
+#course-content span {
+    color: rgba(51, 168, 219, 1);
+}
+
 #course-content .module {
     width: 587px;
     height: 57px;
@@ -185,23 +191,35 @@ main {
 
 #transform-world {
     width: 100%;
-    height: 558px;
+    height: 620px;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: rgba(51, 168, 219, 1);
-    background-size: contain;
     overflow: hidden;
     align-content: center;
+    background-image: url(../assets/images/woman-code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
 }
 
-#transform-world img {
-    width: 1439px;
-    position: fixed;
+#transform-world p {
+    width: 274px;
+    height: 177px;
+    margin: 0 0 0 222px;
+    font-family: Raleway;
+    font-size: 44.5px;
+    font-weight: 900;
+    line-height: 52.46px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 3px 2px 0px rgba(51, 168, 219, 1);
 }
 
 #professional-challenges {
     width: 100%;
-    height: 965px;
+    height: 968px;
     position: relative;
     text-align: center;
     margin-top: 0;
@@ -215,38 +233,60 @@ main {
 }
 
 #professional-challenges h2 {
-    width: 746px;
+    width: 779px;
     height: 76px;
-    margin: 100px auto 54px;
+    margin: 113px auto 67px;
     position: relative;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 4.2px;
+    line-height: 41.17px;
     color: rgba(51, 168, 219, 1);
 }
 
 #professional-challenges img {
-    width: 659px;
+    width: 733px;
     height: auto;
+    margin-bottom: 40.4px;
 }
 
 #professional-challenges p {
-    width: 792px;
-    height: 76px;
-    margin: 36px auto 80px;
+    width: 920px;
+    height: 85px;
+    margin: 0px auto 0px;
     position: relative;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+    letter-spacing: -0.1px;
     color: rgba(255, 255, 255, 1);
 }
 
 footer {
     width: 100%;
-    height: 205px;
+    height: 207px;
     position: relative;
     display: inline-block;
+    align-content: center;
+    text-align: center;
     background: -webkit-linear-gradient(rgba(51, 168, 219, 0)15%,
                                         rgba(51, 168, 219, 0.2)100%,
                                         rgba(51, 168, 219, 0.2)100%);
 }
 
+footer img {
+    width: 334px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+footer p {
+    font-family: Raleway;
+    font-size: 17.8px;
+    margin: 1px auto 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(51, 168, 219, 1);
+}
